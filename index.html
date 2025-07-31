@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Junior Java Developer</title>
+<link
+  rel="stylesheet" href="styles.css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+
+
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+<div class="container">
+<div class="nav-container">
+<div class="logo">Portfolio</div>
+<div class="menu-toggle" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<ul class="nav-menu" id="navMenu">
+<li><a href="#about" onclick="closeMenu()">About</a></li>
+<li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+<li><a href="#education" onclick="closeMenu()">Education</a></li>
+<li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<div class="star-layer"></div>
+<section class="hero">
+  
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Tiyani Khosa</h1>
+<h2>Junior Java Developer </h2>
+
+<p>Building digital solutions for real problems with clean, efficient code and user-focused design.</p>
+
+<div class="skills-badges">
+<span class="skill-badge">💻 Web Development</span>
+<span class="skill-badge">📱 Responsive Design</span>
+<span class="skill-badge">🗄️ Database Solutions</span>
+<span class="skill-badge">🧩 Creative Problem Solving</span>
+</div>
+
+
+<div class="hero-buttons">
+<a href="#projects" class="btn btn-primary">View My Projects</a>
+<a href="#contact" class="btn btn-secondary">Hire Me</a>
+</div>
+</div>
+
+</div>
+<input type="file" id="hero-profile" accept="image/*" style="display: none;" onchange="handleImageUpload(this, 'hero-profile-img')">
+</div>
+</div>
+</div>
+</section>
+
+<!-- About Section -->
+
+<section id="about" class="section">
+<div class="container">
+<h2 class="section-title" style="color: #8B5CF6;">About Me</h2>
+<div class="about-content">
+<div class="about-image">
+<div class="image-upload">
+  <img src="images/about.jpeg" alt="About Picture" width="200">
+</div>
+
+
+<input type="file" id="about-profile" accept="image/*" style="display: none;" onchange="handleImageUpload(this, 'about-profile-img')">
+
+<div class="contact-info">
+<a href="github.com/Tiyanikh" target="_blank" class="social-link">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+</svg>
+GitHub
+</a>
+<a href="linkedin.com/in/tiyani-khosa " target="_blank" class="social-link">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg>
+LinkedIn
+</a>
+<a href="files/Tiyani Khosa..pdf" target="_blank" class="social-link cv-link">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+  </svg>
+  Download CV
+</a>
+
+</div>
+</div>
+<div class="about-text">
+<h3>Hello, I'm Tiyani Khosa</h3>
+<p>I am a junior Java developer  passionate about web development and also interested in testing. I am actively working towards becoming a Test Automation Engineer.</p>
+<p>When I'm not coding, you can find me exploring new technologies.</p>
+<!-- Technical Skills Section -->
+<!-- Put this inside your <head> if not already included -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<!-- Inside your <body>, place this for the Skills Section -->
+<div class="tech-skills">
+  <h4 style="text-align: center; color: #8B5CF6;">Technical Skills</h4>
+
+  <div class="tech-icons" style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; padding: 10px;">
+    <div class="tech-icon" style="display: flex; flex-direction: column; align-items: center; color: #8B5CF6;">
+      <i class="fa-brands fa-java" style="font-size: 2em;"></i>
+      <span style="margin-top: 5px;">Java</span>
+    </div>
+    <div class="tech-icon" style="display: flex; flex-direction: column; align-items: center; color: #8B5CF6;">
+      <i class="fa-brands fa-css3-alt" style="font-size: 2em;"></i>
+      <span style="margin-top: 5px;">CSS3</span>
+    </div>
+    <div class="tech-icon" style="display: flex; flex-direction: column; align-items: center; color: #8B5CF6;">
+      <i class="fa-brands fa-js" style="font-size: 2em;"></i>
+      <span style="margin-top: 5px;">JavaScript</span>
+    </div>
+    <div class="tech-icon" style="display: flex; flex-direction: column; align-items: center; color: #8B5CF6;">
+      <i class="fa-solid fa-code" style="font-size: 2em;"></i>
+      <span style="margin-top: 5px;">C#</span>
+    </div>
+    <div class="tech-icon" style="display: flex; flex-direction: column; align-items: center; color: #8B5CF6;">
+      <i class="fa-brands fa-html5" style="font-size: 2em;"></i>
+      <span style="margin-top: 5px;">HTML5</span>
+    </div>
+    <div class="tech-icon" style="display: flex; flex-direction: column; align-items: center; color: #8B5CF6;">
+      <i class="fa-brands fa-python" style="font-size: 2em;"></i>
+      <span style="margin-top: 5px;">Python</span>
+    </div>
+    <div class="tech-icon" style="display: flex; flex-direction: column; align-items: center; color: #8B5CF6;">
+      <i class="fa-solid fa-database" style="font-size: 2em;"></i>
+      <span style="margin-top: 5px;">MySQL</span>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+
+<section id="projects" class="section">
+<div class="container">
+<h2 class="section-title" style="color: #8B5CF6;">My Website Projects</h2>
+
+
+
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-image">
+<div class="image-upload">
+  
+  <img src="images/product.jpeg" alt="Project 1" width="300" />
+</div>
+<input type="file" id="project1" accept="image/*" style="display: none;" onchange="handleImageUpload(this, 'project1-img')">
+</div>
+<div class="project-content">
+<div class="project-title">Online Store Website</div>
+<div class="project-description">
+A modern e-commerce solution with user authentication, product catalog, shopping cart and payment integration. Built with responsive design principles.
+</div>
+<div class="project-tech">
+<span class="tech-tag">HTML5</span>
+<span class="tech-tag">CSS3</span>
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">Java</span>
+<span class="tech-tag">MySQL</span>
+</div>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-image">
+<div class="image-upload" >
+<img src="images/download.jpeg" alt="Project 1" width="300" />
+</div>
+<input type="file" id="project2" accept="image/*" style="display: none;" onchange="handleImageUpload(this, 'project2-img')">
+</div>
+<div class="project-content">
+<div class="project-title">Mobile Game Development</div>
+<div class="project-description">
+Interactive mobile game with engaging gameplay mechanics, score tracking and responsive controls. Optimized for performance across devices.
+</div>
+<div class="project-tech">
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">HTML5 Canvas</span>
+<span class="tech-tag">CSS3</span>
+<span class="tech-tag">Local Storage</span>
+</div>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-image">
+<div class="image-upload" >
+<img src="images/images.jpeg" alt="Project 1" width="300" />
+</div>
+<input type="file" id="project3" accept="image/*" style="display: none;" onchange="handleImageUpload(this, 'project3-img')">
+</div>
+<div class="project-content">
+<div class="project-title">Train reservation Site</div>
+<div class="project-description">This is the website build for searching the Train Schedule , Seat Availability, Train Timings, Fare Enquiry, Trains Between Stations and Booking seats online.
+</div>
+<div class="project-tech">
+<span class="tech-tag">Java</span>
+<span class="tech-tag">htlm</span>
+<span class="tech-tag">css</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Education Section -->
+
+<section id="education" class="section education">
+<div class="container">
+<h2 class="section-title" style="color: #8B5CF6;">My Education </h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-content">
+<div class="timeline-year">2025 - Expected</div>
+<div class="timeline-title">Advanced Diploma in Computer Science</div>
+<div class="timeline-institution">Tshwane University of Technology</div>
+<div class="timeline-description">
+Specializing in Software Development with coursework in web development, databases, system analysis, and project management. Maintaining a strong academic record with hands-on experience in multiple programming languages.
+</div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content">
+<div class="timeline-year">2022</div>
+<div class="timeline-title">National Diploma in Information Technology (Software Development)</div>
+<div class="timeline-institution">Tshwane University of Technology</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Contact Section -->
+
+<section id="contact" class="section contact">
+<div class="container">
+<h2 class="section-title" style="color: white;">Get In Touch</h2>
+<div class="contact-content">
+<div class="contact-info-section">
+<h3>Let's Work Together</h3>
+<p style="margin-bottom: 2rem; opacity: 0.9;">
+Ready to bring your ideas to life? I'm available for freelance projects, collaborations and full-time opportunities. Let's discuss how I can help you build amazing digital solutions.
+</p>
+<div class="contact-item">
+<div class="contact-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+</svg>
+</div>
+<div class="contact-details">
+<h4>Email</h4>
+<p>tiyanikhosaa@gmail.com</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+</svg>
+</div>
+<div class="contact-details">
+<h4>Phone</h4>
+<p>+27 73 140 0890</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+</svg>
+</div>
+<div class="contact-details">
+<h4>Location</h4>
+<p>Johannesburg, South Africa</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+</svg>
+</div>
+<div class="contact-details">
+<h4>Availability</h4>
+<p>Open to new opportunities</p>
+</div>
+</div>
+</div>
+<div class="contact-form">
+<h3>Send Me a Message</h3>
+<form id="contactForm" onsubmit="handleFormSubmit(event)">
+<div class="form-group">
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+<label for="subject">Subject</label>
+<input type="text" id="subject" name="subject" required>
+</div>
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" required placeholder="Tell me about your project or inquiry..."></textarea>
+</div>
+<button type="submit" class="submit-btn">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+// Mobile menu toggle functionality
+function toggleMenu() {
+const navMenu = document.getElementById('navMenu');
+navMenu.classList.toggle('active');
+}
+
+function closeMenu() {
+const navMenu = document.getElementById('navMenu');
+navMenu.classList.remove('active');
+}
+
+// Image upload functionality
+function uploadImage(inputId) {
+document.getElementById(inputId).click();
+}
+
+function handleImageUpload(input, targetId) {
+if (input.files && input.files[0]) {
+const reader = new FileReader();
+reader.onload = function(e) {
+const uploadArea = input.previousElementSibling;
+const img = document.createElement('img');
+img.src = e.target.result;
+img.className = 'uploaded-image';
+img.id = targetId;
+
+// Special handling for profile images
+if (targetId.includes('profile')) {
+img.className = targetId.includes('hero') ? 'profile-img' : 'about-img';
+}
+
+uploadArea.innerHTML = '';
+uploadArea.appendChild(img);
+};
+reader.readAsDataURL(input.files[0]);
+}
+}
+
+// Form submission handler
+function handleFormSubmit(event) {
+event.preventDefault();
+const form = event.target;
+const formData = new FormData(form);
+
+// Get form values
+const name = formData.get('name');
+const email = formData.get('email');
+const subject = formData.get('subject');
+const message = formData.get('message');
+
+// Simple validation
+if (!name || !email || !subject || !message) {
+alert('Please fill in all fields.');
+return;
+}
+
+// Simulate form submission (replace with actual form handling)
+alert('Thank you for your message! I will get back to you soon.');
+form.reset();
+}
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+
+// Add animation on scroll
+const observerOptions = {
+threshold: 0.1,
+rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.style.opacity = '1';
+entry.target.style.transform = 'translateY(0)';
+}
+});
+}, observerOptions);
+
+// Observe elements for animation
+document.querySelectorAll('.project-card, .timeline-item, .experience-card').forEach(el => {
+el.style.opacity = '0';
+el.style.transform = 'translateY(20px)';
+el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+observer.observe(el);
+});
+</script>
